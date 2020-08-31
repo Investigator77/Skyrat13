@@ -3,7 +3,7 @@
 /obj/item/projectile/bullet/c45
 	name = ".45 bullet"
 	damage = 30
-	stamina = 8 //Skyrat edit: Stopping power.
+	stamina = 12 //Skyrat edit: Stopping power.
 
 /obj/item/projectile/bullet/c45_cleaning
 	name = ".45 bullet"
@@ -52,6 +52,7 @@
 /obj/item/projectile/bullet/c46x30mm
 	name = "4.6x30mm bullet"
 	damage = 20     //Skyrat edit: Why the fuck did this deal less damage than .38 lethals before?
+	armour_penetration = -20
 
 /obj/item/projectile/bullet/c46x30mm_ap
 	name = "4.6x30mm SS192 bullet"
@@ -61,4 +62,5 @@
 /obj/item/projectile/bullet/incendiary/c46x30mm
 	name = "4.6x30mm incendiary bullet"
 	damage = 7.5
-	fire_stacks = 1
+	fire_stacks = 2
+	armour_penetration = -60
