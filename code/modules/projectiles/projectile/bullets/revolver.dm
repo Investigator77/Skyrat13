@@ -2,7 +2,7 @@
 
 /obj/item/projectile/bullet/n762
 	name = "7.62x38mmR bullet"
-	damage = 50     //Skyrat edit: Weaker than .357 but still very effective
+	damage = 45     //Skyrat edit: Weaker than .357 but still very effective
 
 // .50AE (Desert Eagle)
 
@@ -16,6 +16,7 @@
 /obj/item/projectile/bullet/c38
 	name = ".38 bullet"
 	damage = 25
+	armour_penetration = -10
 	ricochets_max = 2
 	ricochet_chance = 50
 	ricochet_auto_aim_angle = 10
@@ -52,6 +53,7 @@
 /obj/item/projectile/bullet/c38/rubber
 	name = ".38 rubber bullet"
 	damage = 12      //Skyrat edit: A rubber pistol bullet of this caliber should NOT deal 15 brute.
+	armour_penetration = -10
 	stamina = 48
 
 /obj/item/projectile/bullet/c38/trac
@@ -98,14 +100,19 @@
 // .357 (Syndie Revolver)
 
 /obj/item/projectile/bullet/a357
-	name = ".357 bullet"
-	damage = 58  //Skyrat edit: Now it's 116 brute in 2 shots instead of a 2-shot critical, this lets the .357 round be outstanding against slightly injured targets but not 2-shot a fullhealth guy.
+	name = ".357 Magnum bullet"
+	damage = 50  //Skyrat edit: Now it's 100 brute in 2 shots instead of 120.
+	armour_penetration = -30 //"i kill you in 2 shots, red man!" Not anymore.
 
 /obj/item/projectile/bullet/a357/ap
-	name = ".357 armor-piercing bullet"
-	damage = 45
+	name = ".357 Sig bullet"
+	damage = 40
 	armour_penetration = 45
-  
+	
+/obj/item/projectile/bullet/a357/hp
+    name = ".357 JHC bullet"
+	damage = 60
+    armour_penetration = -60
   
 // admin only really, for ocelot memes
 /obj/item/projectile/bullet/a357/match
